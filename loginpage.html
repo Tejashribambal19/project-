@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"
+/>
+    <title>Skillmate.ai - Login</title>
+    <!--Google Fonts: Poppins-->
+    <link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+    <style>
+        /*Reset default styles*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Poppins',sans-serif;
+            background:linear-gradient(to right, #e3f2fd,#bbdefb);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Card Container */
+        .login-card{
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            width: 100;
+            max-width: 400px;
+
+        }
+        /*Logo Styling*/
+        .logo{
+            font-size: 1.8rem;
+            font-weight: 600;
+            color:#1976d2;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+        /*Form Styling*/
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            color:#333;
+        }
+        input{
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 1.2rem;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease;
+        }
+        input:focus{
+            border-color: #1976d2;
+            color: #fff;
+            padding: 0.75 rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover{
+            background-color: #1565c0;
+        }
+        /*Responsive tweaks*/
+        @media(max-width: 480px){
+            .login-card{
+                padding: 2rem;
+
+            }
+            .logo{
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <!--Logo-->
+        <div class="logo">Skillmate.ai</div>
+        <!--Login Form-->
+        <form>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="'fullname"
+placeholder="Enter your full name" required />
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email"
+placeholder="Enter your email" required /> 
+            <label for="password">Password</label>
+            <input type="password" id="password" name="'password"
+placeholder="Enter your password" required />  
+            <button type="submit" class="submit-btn">Login</button>
+
+        </form>
+    </div>
+</body>
+</html>
